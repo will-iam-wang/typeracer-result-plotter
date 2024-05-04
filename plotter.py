@@ -9,7 +9,7 @@ df.sort_values('Date/Time (UTC)', inplace=True)
 window_size = 500
 df['WPM_Smooth'] = df['WPM'].rolling(window=window_size).mean()
 df['Accuracy_Smooth'] = df['Accuracy'].rolling(window=window_size).mean()
-formatted_date = datetime.now().strftime("%b. %d, %Y")
+formatted_date = datetime.now().strftime("%B %d, %Y")
 
 plt.figure(figsize=(14, 7))
 ax1 = plt.gca()  # WPM
