@@ -25,7 +25,7 @@ ax2.plot(df['Date/Time (UTC)'], df['Accuracy_Smooth'], linestyle='-', color='r',
 ax2.set_ylabel('Accuracy', color='r')
 ax2.tick_params(axis='y', labelcolor='r')
 
-plt.title(f'Words Per Minute and Accuracy Over Time by {formatted_date}')
+plt.title(f'Words Per Minute and Accuracy Over Time out of {len(df)} Races by {formatted_date}')
 ax1.legend(loc='upper left')
 ax2.legend(loc='upper right')
 
